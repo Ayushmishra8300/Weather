@@ -1,0 +1,129 @@
+/* Add your CSS styles here */
+body {
+  background: #b10404; /* Change the background color */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+#search-box {
+  background-color: rgba(7, 37, 202, 0.5); /* Adjust the background color and opacity */
+  width: 500px; /* Adjust the width */
+  padding: 15px; /* Adjust the padding */
+  border-radius: 10px; /* Adjust the border-radius */
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3); /* Adjust the box shadow */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(141, 197, 12, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#search-box h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#weather-container {
+  background-color: rgba(7, 37, 202, 0.5); /* Adjust the background color and opacity */
+  width: 500px; /* Adjust the width */
+  padding: 15px; /* Adjust the padding */
+  border-radius: 10px; /* Adjust the border-radius */
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3); /* Adjust the box shadow */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(141, 197, 12, 0.1);
+  text-align: center;
+}
+
+h3 {
+  color: #fff;
+  margin-top: 10px; /* Add margin top */
+}
+
+input[type="text"] {
+  width: calc(100% - 16px);
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px; /* Adjust the border-radius */
+  border: 1px solid white;
+  margin-top: 10px; /* Adjust margin top */
+  margin-bottom: 10px; /* Adjust margin bottom */
+}
+
+button {
+  background: #8b48d7; /* Change the background color */
+  color: white;
+  padding: 8px 15px; /* Adjust padding */
+  border: none;
+  border-radius: 8px; /* Adjust the border-radius */
+  cursor: pointer;
+  margin-top: 10px; /* Adjust margin top */
+  font-size: 14px; /* Adjust font size */
+}
+
+button:hover {
+  background-color: #685bb4; /* Change the hover background color */
+}
+
+#temp-div {
+  font-size: 30px; /* Adjust font size */
+  margin-top: -15px; /* Adjust margin top */
+  color: #fff; /* Add color */
+}
+
+#weather-info {
+  font-size: 14px; /* Adjust font size */
+  color: #fff; /* Add color */
+}
+
+#weather-icon {
+  width: 100px; /* Adjust width */
+  height: 100px; /* Adjust height */
+  margin: 0 auto 10px;
+  display: none;
+}
+
+#hourly-forecast {
+  margin-top: 10px; /* Adjust margin top */
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  color: #fff; /* Add color */
+}
+
+.hourly-item {
+  flex-shrink: 0; /* Prevent items from shrinking */
+  width: 120px; /* Adjust width */
+  text-align: center;
+  margin-right: 20px; /* Add more margin-right */
+}
+
+.hourly-item:last-child {
+  margin-right: 0; /* Remove margin-right for the last item */
+}
+
+#hourly-forecast p {
+  margin: 5px 0; /* Add margin for the paragraph elements */
+}
+
+#hourly-item img {
+  width: 40px; /* Adjust width */
+  height: 40px; /* Adjust height */
+  margin-bottom: 5px;
+}
+
+#hourly-heading {
+  color: #fff;
+  margin-top: 10px;
+}
